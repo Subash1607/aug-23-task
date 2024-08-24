@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #checkbox {
+    display: none;
+}
+.content>p {
+    background-color: lightcoral;
+    font-size: 1.5rem;
+    padding: 10px;
+    box-shadow: 10px 10px 10px 1px;
+    width: 300px;
+    text-align: center;
+}
+.content{
+    position: relative;
+    left: -350px;
+    top: 0%;
+    transition: 0.4s ease;
+}
+#checkbox:checked+.content {
+    width: 300px;
+    left: 0;
+}
+
+    </style>
+</head>
+
+<body>
+    <label for="checkbox"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png"
+            alt="" width="80px"></label>
+    <input type="checkbox" id="checkbox">
+    <div class="content">
+        <p>Breakfast</p>
+        <p>Lunch</p>
+        <p>Snacks</p>
+        <p>Dinner</p>
+    </div>
+</body>
+
+</html>
